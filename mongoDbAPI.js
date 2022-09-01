@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 const corsOptions = {
-    origin: 'http://localhost:3000',
+    origin: 'https://tinakovalova.github.io/cursor-hw20/',
     optionsSuccessStatus: 200
 }
 
