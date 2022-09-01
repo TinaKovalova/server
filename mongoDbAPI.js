@@ -2,10 +2,11 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+const dotenv = require("dotenv");
 
-
+dotenv.config();
 const appPort = 4004;
-const mongoUrl = "mongodb+srv://admin:12345@cluster0.sjazaok.mongodb.net/?retryWrites=true&w=majority";
+const mongoUrl = process.env.MONGODB_URI;
 
 const app = express();
 app.use(bodyParser.json());
