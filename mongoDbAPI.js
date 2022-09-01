@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 require("dotenv").config();
 
-const appPort = 4004;
+const appPort = process.env.PORT || 4004;
 const mongoUrl = process.env.MONGODB_URI;
 
 const app = express();

@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon mongoDbAPI.js"
+    "start": "node mongoDbAPI.js"
+  },
+  "engines": {
+    "node": "16.15.1"
   },
   "author": "",
   "license": "ISC",
