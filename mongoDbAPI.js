@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 const corsOptions = {
-    origin: 'https://tinakovalova.github.io',
+    origin: ['https://tinakovalova.github.io','http://localhost:3000'],
     optionsSuccessStatus: 200
 }
 
